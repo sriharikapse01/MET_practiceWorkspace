@@ -11,4 +11,4 @@ count = 0
 for i in a:
     if i in vowels:
         count = count + 1
-print(count)
+print(f"Vowels count : {count}")

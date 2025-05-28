@@ -9,4 +9,4 @@ sum = 0
 for i in a:
     if i % 2 == 0:
         sum += i
-print("Sum of even numbers in the list:", sum)
+print(f"Sum of even numbers in the list: {sum} ")
