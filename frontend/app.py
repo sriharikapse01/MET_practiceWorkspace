@@ -75,9 +75,9 @@ if image:
                 # Updated size logic (based on width, as per previous request)
                 if width <= 28:
                     size = "S"
-                elif 29 <= width <= 30:
+                elif 28 <= width <= 34:
                     size = "M"
-                elif 30 <= width <= 40:
+                elif 34 <= width <= 40:
                     size = "L"
                 else:
                     size = "XL"

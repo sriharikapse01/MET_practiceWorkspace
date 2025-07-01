@@ -1,4 +1,6 @@
-from .db.supabase_client import get_supabase_client
+from backend.db.supabase_client import get_supabase_client
+
+
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from core.detection import detect_person_size
@@ -32,11 +34,11 @@ async def detect(file: UploadFile = File(...)):
 
     # ✅ Use WIDTH to determine clothing size
     width = result["width_cm"]
-    if width <= 39:
+    if width <= 28:
         size = "S"
-    elif 40 <= width <= 45:
+    elif 28 <= width <= 34:
         size = "M"
-    elif 46 <= width <= 50:
+    elif 34 <= width <= 40:
         size = "L"
     else:
         size = "XL"
